@@ -30,7 +30,7 @@ class MyApp extends StatelessWidget {
         // tested with just a hot reload.
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: Playground(),
     );
   }
 }
@@ -117,6 +117,2648 @@ class _MyHomePageState extends State<MyHomePage> {
         tooltip: 'Increment',
         child: const Icon(Icons.add),
       ), // This trailing comma makes auto-formatting nicer for build methods.
+    );
+  }
+}
+
+class Playground extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      height: 200,
+      width: 300,
+      child: Column(
+        children: [
+          Container(
+            padding: const EdgeInsets.all(78),
+            decoration: ShapeDecoration(
+              color: Colors.white,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(12),
+              ),
+            ),
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              mainAxisAlignment: MainAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              spacing: 10,
+              children: [
+                Container(
+                  width: 1646,
+                  clipBehavior: Clip.antiAlias,
+                  decoration: ShapeDecoration(
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(8),
+                    ),
+                  ),
+                  child: Column(
+                    mainAxisSize: MainAxisSize.min,
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Container(
+                        width: double.infinity,
+                        child: Row(
+                          mainAxisSize: MainAxisSize.min,
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                            Container(
+                              width: 224,
+                              padding: const EdgeInsets.all(22),
+                              decoration: BoxDecoration(
+                                color: const Color(0xFFFCFCFC),
+                              ),
+                              child: Row(
+                                mainAxisSize: MainAxisSize.min,
+                                mainAxisAlignment: MainAxisAlignment.start,
+                                crossAxisAlignment: CrossAxisAlignment.center,
+                                spacing: 10,
+                                children: [
+                                  Container(
+                                    width: 20,
+                                    height: 20,
+                                    clipBehavior: Clip.antiAlias,
+                                    decoration: BoxDecoration(),
+                                    child: Stack(),
+                                  ),
+                                  Text(
+                                    'Date',
+                                    style: TextStyle(
+                                      color: const Color(0xFF222222),
+                                      fontSize: 20,
+                                      fontFamily: 'Poppins',
+                                      fontWeight: FontWeight.w500,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            Container(
+                              width: 1.20,
+                              height: 50,
+                              decoration: BoxDecoration(
+                                color: const Color(0xFFDADADA),
+                              ),
+                            ),
+                            Container(
+                              width: 224,
+                              padding: const EdgeInsets.all(22),
+                              decoration: BoxDecoration(
+                                color: const Color(0xFFFCFCFC),
+                              ),
+                              child: Row(
+                                mainAxisSize: MainAxisSize.min,
+                                mainAxisAlignment: MainAxisAlignment.start,
+                                crossAxisAlignment: CrossAxisAlignment.center,
+                                spacing: 10,
+                                children: [
+                                  Container(
+                                    width: 20,
+                                    height: 20,
+                                    clipBehavior: Clip.antiAlias,
+                                    decoration: BoxDecoration(),
+                                    child: Stack(),
+                                  ),
+                                  Text(
+                                    'Title',
+                                    style: TextStyle(
+                                      color: const Color(0xFF222222),
+                                      fontSize: 20,
+                                      fontFamily: 'Poppins',
+                                      fontWeight: FontWeight.w500,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            Container(
+                              width: 1.20,
+                              height: 50,
+                              decoration: BoxDecoration(
+                                color: const Color(0xFFDADADA),
+                              ),
+                            ),
+                            Expanded(
+                              child: Container(
+                                padding: const EdgeInsets.all(22),
+                                decoration: BoxDecoration(
+                                  color: const Color(0xFFFCFCFC),
+                                ),
+                                child: Row(
+                                  mainAxisSize: MainAxisSize.min,
+                                  mainAxisAlignment: MainAxisAlignment.start,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  spacing: 10,
+                                  children: [
+                                    Container(
+                                      width: 20,
+                                      height: 20,
+                                      clipBehavior: Clip.antiAlias,
+                                      decoration: BoxDecoration(),
+                                      child: Stack(),
+                                    ),
+                                    Text(
+                                      'Author',
+                                      style: TextStyle(
+                                        color: const Color(0xFF222222),
+                                        fontSize: 20,
+                                        fontFamily: 'Poppins',
+                                        fontWeight: FontWeight.w500,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ),
+                            Container(
+                              width: 1.20,
+                              height: 50,
+                              decoration: BoxDecoration(
+                                color: const Color(0xFFDADADA),
+                              ),
+                            ),
+                            Expanded(
+                              child: Container(
+                                padding: const EdgeInsets.all(22),
+                                decoration: BoxDecoration(
+                                  color: const Color(0xFFFCFCFC),
+                                ),
+                                child: Row(
+                                  mainAxisSize: MainAxisSize.min,
+                                  mainAxisAlignment: MainAxisAlignment.start,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  spacing: 10,
+                                  children: [
+                                    Container(
+                                      width: 20,
+                                      height: 20,
+                                      clipBehavior: Clip.antiAlias,
+                                      decoration: BoxDecoration(),
+                                      child: Stack(),
+                                    ),
+                                    Text(
+                                      'Genre',
+                                      style: TextStyle(
+                                        color: const Color(0xFF222222),
+                                        fontSize: 20,
+                                        fontFamily: 'Poppins',
+                                        fontWeight: FontWeight.w500,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ),
+                            Container(
+                              width: 1.20,
+                              height: 50,
+                              decoration: BoxDecoration(
+                                color: const Color(0xFFDADADA),
+                              ),
+                            ),
+                            Container(
+                              width: 224,
+                              padding: const EdgeInsets.all(22),
+                              decoration: BoxDecoration(
+                                color: const Color(0xFFFCFCFC),
+                              ),
+                              child: Row(
+                                mainAxisSize: MainAxisSize.min,
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                crossAxisAlignment: CrossAxisAlignment.center,
+                                spacing: 10,
+                                children: [
+                                  Container(
+                                    width: 20,
+                                    height: 20,
+                                    clipBehavior: Clip.antiAlias,
+                                    decoration: BoxDecoration(),
+                                    child: Stack(),
+                                  ),
+                                  Text(
+                                    'Progress',
+                                    style: TextStyle(
+                                      color: const Color(0xFF222222),
+                                      fontSize: 20,
+                                      fontFamily: 'Poppins',
+                                      fontWeight: FontWeight.w500,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            Container(
+                              width: 1.20,
+                              height: 50,
+                              decoration: BoxDecoration(
+                                color: const Color(0xFFDADADA),
+                              ),
+                            ),
+                            Expanded(
+                              child: Container(
+                                padding: const EdgeInsets.all(22),
+                                decoration: BoxDecoration(
+                                  color: const Color(0xFFFCFCFC),
+                                ),
+                                child: Row(
+                                  mainAxisSize: MainAxisSize.min,
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  spacing: 10,
+                                  children: [
+                                    Container(
+                                      width: 20,
+                                      height: 20,
+                                      clipBehavior: Clip.antiAlias,
+                                      decoration: BoxDecoration(),
+                                      child: Stack(),
+                                    ),
+                                    Text(
+                                      'Rating',
+                                      style: TextStyle(
+                                        color: const Color(0xFF222222),
+                                        fontSize: 20,
+                                        fontFamily: 'Poppins',
+                                        fontWeight: FontWeight.w500,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ),
+                            Container(
+                              width: 1.20,
+                              height: 50,
+                              decoration: BoxDecoration(
+                                color: const Color(0xFFDADADA),
+                              ),
+                            ),
+                            Expanded(
+                              child: Container(
+                                padding: const EdgeInsets.all(22),
+                                decoration: BoxDecoration(
+                                  color: const Color(0xFFFCFCFC),
+                                ),
+                                child: Row(
+                                  mainAxisSize: MainAxisSize.min,
+                                  mainAxisAlignment: MainAxisAlignment.start,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  spacing: 10,
+                                  children: [
+                                    Container(
+                                      width: 20,
+                                      height: 20,
+                                      clipBehavior: Clip.antiAlias,
+                                      decoration: BoxDecoration(),
+                                      child: Stack(),
+                                    ),
+                                    Text(
+                                      'URL',
+                                      style: TextStyle(
+                                        color: const Color(0xFF222222),
+                                        fontSize: 20,
+                                        fontFamily: 'Poppins',
+                                        fontWeight: FontWeight.w500,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Container(
+                        width: double.infinity,
+                        height: 1.60,
+                        decoration: BoxDecoration(
+                          color: const Color(0xFFDADADA),
+                        ),
+                      ),
+                      Container(
+                        width: double.infinity,
+                        child: Row(
+                          mainAxisSize: MainAxisSize.min,
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                            Container(
+                              width: 224,
+                              height: 82,
+                              padding: const EdgeInsets.all(22),
+                              clipBehavior: Clip.antiAlias,
+                              decoration: BoxDecoration(
+                                color: const Color(0xFFFCFCFC),
+                              ),
+                              child: Row(
+                                mainAxisSize: MainAxisSize.min,
+                                mainAxisAlignment: MainAxisAlignment.start,
+                                crossAxisAlignment: CrossAxisAlignment.center,
+                                spacing: 10,
+                                children: [
+                                  Text(
+                                    '22/12/22',
+                                    style: TextStyle(
+                                      color: const Color(0xFF222222),
+                                      fontSize: 20,
+                                      fontFamily: 'Poppins',
+                                      fontWeight: FontWeight.w500,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            Container(
+                              width: 1.20,
+                              height: 50,
+                              decoration: BoxDecoration(
+                                color: const Color(0xFFDADADA),
+                              ),
+                            ),
+                            Container(
+                              width: 224,
+                              height: 82,
+                              padding: const EdgeInsets.symmetric(
+                                horizontal: 12,
+                                vertical: 22,
+                              ),
+                              clipBehavior: Clip.antiAlias,
+                              decoration: BoxDecoration(
+                                color: const Color(0xFFFCFCFC),
+                              ),
+                              child: Row(
+                                mainAxisSize: MainAxisSize.min,
+                                mainAxisAlignment: MainAxisAlignment.start,
+                                crossAxisAlignment: CrossAxisAlignment.center,
+                                spacing: 10,
+                                children: [
+                                  Text(
+                                    'Fire&Blood',
+                                    style: TextStyle(
+                                      color: const Color(0xFF222222),
+                                      fontSize: 20,
+                                      fontFamily: 'Poppins',
+                                      fontWeight: FontWeight.w500,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            Container(
+                              width: 1.20,
+                              height: 50,
+                              decoration: BoxDecoration(
+                                color: const Color(0xFFDADADA),
+                              ),
+                            ),
+                            Expanded(
+                              child: Container(
+                                height: 82,
+                                padding: const EdgeInsets.symmetric(
+                                  horizontal: 12,
+                                  vertical: 22,
+                                ),
+                                clipBehavior: Clip.antiAlias,
+                                decoration: BoxDecoration(
+                                  color: const Color(0xFFFCFCFC),
+                                ),
+                                child: Row(
+                                  mainAxisSize: MainAxisSize.min,
+                                  mainAxisAlignment: MainAxisAlignment.start,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  spacing: 10,
+                                  children: [
+                                    Text(
+                                      'George R.R Martin',
+                                      style: TextStyle(
+                                        color: const Color(0xFF222222),
+                                        fontSize: 20,
+                                        fontFamily: 'Poppins',
+                                        fontWeight: FontWeight.w500,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ),
+                            Container(
+                              width: 1.20,
+                              height: 50,
+                              decoration: BoxDecoration(
+                                color: const Color(0xFFDADADA),
+                              ),
+                            ),
+                            Expanded(
+                              child: Container(
+                                height: 82,
+                                padding: const EdgeInsets.symmetric(
+                                  horizontal: 12,
+                                  vertical: 22,
+                                ),
+                                clipBehavior: Clip.antiAlias,
+                                decoration: BoxDecoration(
+                                  color: const Color(0xFFFCFCFC),
+                                ),
+                                child: Row(
+                                  mainAxisSize: MainAxisSize.min,
+                                  mainAxisAlignment: MainAxisAlignment.start,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  spacing: 10,
+                                  children: [
+                                    Container(
+                                      height: 30,
+                                      padding: const EdgeInsets.symmetric(
+                                        horizontal: 12,
+                                        vertical: 4,
+                                      ),
+                                      clipBehavior: Clip.antiAlias,
+                                      decoration: ShapeDecoration(
+                                        color: const Color(0xFFFBE7E9),
+                                        shape: RoundedRectangleBorder(
+                                          borderRadius: BorderRadius.circular(
+                                            6,
+                                          ),
+                                        ),
+                                      ),
+                                      child: Row(
+                                        mainAxisSize: MainAxisSize.min,
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.center,
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.center,
+                                        spacing: 10,
+                                        children: [
+                                          Text(
+                                            'Fantasy',
+                                            style: TextStyle(
+                                              color: const Color(0xFF222222),
+                                              fontSize: 16,
+                                              fontFamily: 'Poppins',
+                                              fontWeight: FontWeight.w500,
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                    Container(
+                                      height: 30,
+                                      padding: const EdgeInsets.symmetric(
+                                        horizontal: 12,
+                                        vertical: 4,
+                                      ),
+                                      clipBehavior: Clip.antiAlias,
+                                      decoration: ShapeDecoration(
+                                        color: const Color(0xFFEDE7FB),
+                                        shape: RoundedRectangleBorder(
+                                          borderRadius: BorderRadius.circular(
+                                            6,
+                                          ),
+                                        ),
+                                      ),
+                                      child: Row(
+                                        mainAxisSize: MainAxisSize.min,
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.center,
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.center,
+                                        spacing: 10,
+                                        children: [
+                                          Text(
+                                            'Fiction',
+                                            style: TextStyle(
+                                              color: const Color(0xFF222222),
+                                              fontSize: 16,
+                                              fontFamily: 'Poppins',
+                                              fontWeight: FontWeight.w500,
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ),
+                            Container(
+                              width: 1.20,
+                              height: 50,
+                              decoration: BoxDecoration(
+                                color: const Color(0xFFDADADA),
+                              ),
+                            ),
+                            Container(
+                              width: 224,
+                              height: 82,
+                              padding: const EdgeInsets.all(22),
+                              clipBehavior: Clip.antiAlias,
+                              decoration: BoxDecoration(
+                                color: const Color(0xFFFCFCFC),
+                              ),
+                              child: Row(
+                                mainAxisSize: MainAxisSize.min,
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                crossAxisAlignment: CrossAxisAlignment.center,
+                                spacing: 10,
+                                children: [
+                                  Row(
+                                    mainAxisSize: MainAxisSize.min,
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.center,
+                                    spacing: 4,
+                                    children: [
+                                      Text(
+                                        '50',
+                                        style: TextStyle(
+                                          color: const Color(0xFF222222),
+                                          fontSize: 22,
+                                          fontFamily: 'Poppins',
+                                          fontWeight: FontWeight.w500,
+                                        ),
+                                      ),
+                                      Container(
+                                        width: 26,
+                                        height: 26,
+                                        child: Stack(
+                                          children: [
+                                            Positioned(
+                                              left: 0.02,
+                                              top: 0.02,
+                                              child: Container(
+                                                width: 25.96,
+                                                height: 25.96,
+                                                decoration: ShapeDecoration(
+                                                  color: const Color(
+                                                    0xFFD3F8D2,
+                                                  ),
+                                                  shape: OvalBorder(),
+                                                ),
+                                              ),
+                                            ),
+                                            Positioned(
+                                              left: 0.04,
+                                              top: 26,
+                                              child: Container(
+                                                transform: Matrix4.identity()
+                                                  ..translate(0.0, 0.0)
+                                                  ..rotateZ(-1.57),
+                                                width: 25.96,
+                                                height: 25.96,
+                                                decoration: ShapeDecoration(
+                                                  color: const Color(
+                                                    0xFF24DA24,
+                                                  ),
+                                                  shape: OvalBorder(),
+                                                ),
+                                              ),
+                                            ),
+                                          ],
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ],
+                              ),
+                            ),
+                            Container(
+                              width: 1.20,
+                              height: 50,
+                              decoration: BoxDecoration(
+                                color: const Color(0xFFDADADA),
+                              ),
+                            ),
+                            Expanded(
+                              child: Container(
+                                height: 82,
+                                padding: const EdgeInsets.all(22),
+                                clipBehavior: Clip.antiAlias,
+                                decoration: BoxDecoration(
+                                  color: const Color(0xFFFCFCFC),
+                                ),
+                                child: Row(
+                                  mainAxisSize: MainAxisSize.min,
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  spacing: 10,
+                                  children: [
+                                    Container(
+                                      height: 30,
+                                      padding: const EdgeInsets.symmetric(
+                                        horizontal: 12,
+                                        vertical: 6,
+                                      ),
+                                      clipBehavior: Clip.antiAlias,
+                                      decoration: ShapeDecoration(
+                                        color: const Color(0xFFFFF0BA),
+                                        shape: RoundedRectangleBorder(
+                                          borderRadius: BorderRadius.circular(
+                                            6,
+                                          ),
+                                        ),
+                                      ),
+                                      child: Row(
+                                        mainAxisSize: MainAxisSize.min,
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.center,
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.center,
+                                        spacing: 2,
+                                        children: [
+                                          Container(
+                                            width: 17.31,
+                                            height: 17.31,
+                                            clipBehavior: Clip.antiAlias,
+                                            decoration: BoxDecoration(),
+                                            child: Stack(),
+                                          ),
+                                          Container(
+                                            width: 17.31,
+                                            height: 17.31,
+                                            clipBehavior: Clip.antiAlias,
+                                            decoration: BoxDecoration(),
+                                            child: Stack(),
+                                          ),
+                                          Container(
+                                            width: 17.31,
+                                            height: 17.31,
+                                            clipBehavior: Clip.antiAlias,
+                                            decoration: BoxDecoration(),
+                                            child: Stack(),
+                                          ),
+                                          Container(
+                                            width: 17.31,
+                                            height: 17.31,
+                                            clipBehavior: Clip.antiAlias,
+                                            decoration: BoxDecoration(),
+                                            child: Stack(),
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ),
+                            Container(
+                              width: 1.20,
+                              height: 50,
+                              decoration: BoxDecoration(
+                                color: const Color(0xFFDADADA),
+                              ),
+                            ),
+                            Expanded(
+                              child: Container(
+                                height: 82,
+                                padding: const EdgeInsets.all(22),
+                                clipBehavior: Clip.antiAlias,
+                                decoration: BoxDecoration(
+                                  color: const Color(0xFFFCFCFC),
+                                ),
+                                child: Row(
+                                  mainAxisSize: MainAxisSize.min,
+                                  mainAxisAlignment: MainAxisAlignment.start,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  spacing: 10,
+                                  children: [
+                                    Text(
+                                      'https://abc.in',
+                                      style: TextStyle(
+                                        color: const Color(0xFF222222),
+                                        fontSize: 20,
+                                        fontFamily: 'Poppins',
+                                        fontWeight: FontWeight.w500,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Container(
+                        width: double.infinity,
+                        height: 1.60,
+                        decoration: BoxDecoration(
+                          color: const Color(0xFFDADADA),
+                        ),
+                      ),
+                      Container(
+                        width: double.infinity,
+                        child: Row(
+                          mainAxisSize: MainAxisSize.min,
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                            Container(
+                              width: 224,
+                              height: 82,
+                              padding: const EdgeInsets.all(22),
+                              clipBehavior: Clip.antiAlias,
+                              decoration: BoxDecoration(
+                                color: const Color(0xFFFCFCFC),
+                              ),
+                              child: Row(
+                                mainAxisSize: MainAxisSize.min,
+                                mainAxisAlignment: MainAxisAlignment.start,
+                                crossAxisAlignment: CrossAxisAlignment.center,
+                                spacing: 10,
+                                children: [
+                                  Text(
+                                    '22/10/2022',
+                                    style: TextStyle(
+                                      color: const Color(0xFF222222),
+                                      fontSize: 20,
+                                      fontFamily: 'Poppins',
+                                      fontWeight: FontWeight.w500,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            Container(
+                              width: 1.20,
+                              height: 50,
+                              decoration: BoxDecoration(
+                                color: const Color(0xFFDADADA),
+                              ),
+                            ),
+                            Container(
+                              width: 224,
+                              height: 82,
+                              padding: const EdgeInsets.symmetric(
+                                horizontal: 12,
+                                vertical: 22,
+                              ),
+                              clipBehavior: Clip.antiAlias,
+                              decoration: BoxDecoration(
+                                color: const Color(0xFFFCFCFC),
+                              ),
+                              child: Row(
+                                mainAxisSize: MainAxisSize.min,
+                                mainAxisAlignment: MainAxisAlignment.start,
+                                crossAxisAlignment: CrossAxisAlignment.center,
+                                spacing: 10,
+                                children: [
+                                  Text(
+                                    'Bridge of clay',
+                                    style: TextStyle(
+                                      color: const Color(0xFF222222),
+                                      fontSize: 20,
+                                      fontFamily: 'Poppins',
+                                      fontWeight: FontWeight.w500,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            Container(
+                              width: 1.20,
+                              height: 50,
+                              decoration: BoxDecoration(
+                                color: const Color(0xFFDADADA),
+                              ),
+                            ),
+                            Expanded(
+                              child: Container(
+                                height: 82,
+                                padding: const EdgeInsets.symmetric(
+                                  horizontal: 12,
+                                  vertical: 22,
+                                ),
+                                clipBehavior: Clip.antiAlias,
+                                decoration: BoxDecoration(
+                                  color: const Color(0xFFFCFCFC),
+                                ),
+                                child: Row(
+                                  mainAxisSize: MainAxisSize.min,
+                                  mainAxisAlignment: MainAxisAlignment.start,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  spacing: 10,
+                                  children: [
+                                    Text(
+                                      'Markus Suzak',
+                                      style: TextStyle(
+                                        color: const Color(0xFF222222),
+                                        fontSize: 20,
+                                        fontFamily: 'Poppins',
+                                        fontWeight: FontWeight.w500,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ),
+                            Container(
+                              width: 1.20,
+                              height: 50,
+                              decoration: BoxDecoration(
+                                color: const Color(0xFFDADADA),
+                              ),
+                            ),
+                            Expanded(
+                              child: Container(
+                                height: 82,
+                                padding: const EdgeInsets.symmetric(
+                                  horizontal: 12,
+                                  vertical: 22,
+                                ),
+                                clipBehavior: Clip.antiAlias,
+                                decoration: BoxDecoration(
+                                  color: const Color(0xFFFCFCFC),
+                                ),
+                                child: Row(
+                                  mainAxisSize: MainAxisSize.min,
+                                  mainAxisAlignment: MainAxisAlignment.start,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  spacing: 10,
+                                  children: [
+                                    Container(
+                                      height: 30,
+                                      padding: const EdgeInsets.symmetric(
+                                        horizontal: 12,
+                                        vertical: 4,
+                                      ),
+                                      clipBehavior: Clip.antiAlias,
+                                      decoration: ShapeDecoration(
+                                        color: const Color(0xFFEDE7FB),
+                                        shape: RoundedRectangleBorder(
+                                          borderRadius: BorderRadius.circular(
+                                            6,
+                                          ),
+                                        ),
+                                      ),
+                                      child: Row(
+                                        mainAxisSize: MainAxisSize.min,
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.center,
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.center,
+                                        spacing: 10,
+                                        children: [
+                                          Text(
+                                            'Fiction',
+                                            style: TextStyle(
+                                              color: const Color(0xFF222222),
+                                              fontSize: 16,
+                                              fontFamily: 'Poppins',
+                                              fontWeight: FontWeight.w500,
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ),
+                            Container(
+                              width: 1.20,
+                              height: 50,
+                              decoration: BoxDecoration(
+                                color: const Color(0xFFDADADA),
+                              ),
+                            ),
+                            Container(
+                              width: 224,
+                              height: 82,
+                              padding: const EdgeInsets.all(22),
+                              clipBehavior: Clip.antiAlias,
+                              decoration: BoxDecoration(
+                                color: const Color(0xFFFCFCFC),
+                              ),
+                              child: Row(
+                                mainAxisSize: MainAxisSize.min,
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                crossAxisAlignment: CrossAxisAlignment.center,
+                                spacing: 10,
+                                children: [
+                                  Row(
+                                    mainAxisSize: MainAxisSize.min,
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.center,
+                                    spacing: 4,
+                                    children: [
+                                      Text(
+                                        '75',
+                                        style: TextStyle(
+                                          color: const Color(0xFF222222),
+                                          fontSize: 22,
+                                          fontFamily: 'Poppins',
+                                          fontWeight: FontWeight.w500,
+                                        ),
+                                      ),
+                                      Container(
+                                        width: 26,
+                                        height: 26,
+                                        child: Stack(
+                                          children: [
+                                            Positioned(
+                                              left: 0.02,
+                                              top: 0.02,
+                                              child: Container(
+                                                width: 25.96,
+                                                height: 25.96,
+                                                decoration: ShapeDecoration(
+                                                  color: const Color(
+                                                    0xFFD3F8D2,
+                                                  ),
+                                                  shape: OvalBorder(),
+                                                ),
+                                              ),
+                                            ),
+                                            Positioned(
+                                              left: 0.04,
+                                              top: 26,
+                                              child: Container(
+                                                transform: Matrix4.identity()
+                                                  ..translate(0.0, 0.0)
+                                                  ..rotateZ(-1.57),
+                                                width: 25.96,
+                                                height: 25.96,
+                                                decoration: ShapeDecoration(
+                                                  color: const Color(
+                                                    0xFF24DA24,
+                                                  ),
+                                                  shape: OvalBorder(),
+                                                ),
+                                              ),
+                                            ),
+                                          ],
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ],
+                              ),
+                            ),
+                            Container(
+                              width: 1.20,
+                              height: 50,
+                              decoration: BoxDecoration(
+                                color: const Color(0xFFDADADA),
+                              ),
+                            ),
+                            Expanded(
+                              child: Container(
+                                height: 82,
+                                padding: const EdgeInsets.all(22),
+                                clipBehavior: Clip.antiAlias,
+                                decoration: BoxDecoration(
+                                  color: const Color(0xFFFCFCFC),
+                                ),
+                                child: Row(
+                                  mainAxisSize: MainAxisSize.min,
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  spacing: 10,
+                                  children: [
+                                    Container(
+                                      height: 30,
+                                      padding: const EdgeInsets.symmetric(
+                                        horizontal: 12,
+                                        vertical: 6,
+                                      ),
+                                      clipBehavior: Clip.antiAlias,
+                                      decoration: ShapeDecoration(
+                                        color: const Color(0xFFFFF0BA),
+                                        shape: RoundedRectangleBorder(
+                                          borderRadius: BorderRadius.circular(
+                                            6,
+                                          ),
+                                        ),
+                                      ),
+                                      child: Row(
+                                        mainAxisSize: MainAxisSize.min,
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.center,
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.center,
+                                        spacing: 2,
+                                        children: [
+                                          Container(
+                                            width: 17.31,
+                                            height: 17.31,
+                                            clipBehavior: Clip.antiAlias,
+                                            decoration: BoxDecoration(),
+                                            child: Stack(),
+                                          ),
+                                          Container(
+                                            width: 17.31,
+                                            height: 17.31,
+                                            clipBehavior: Clip.antiAlias,
+                                            decoration: BoxDecoration(),
+                                            child: Stack(),
+                                          ),
+                                          Container(
+                                            width: 17.31,
+                                            height: 17.31,
+                                            clipBehavior: Clip.antiAlias,
+                                            decoration: BoxDecoration(),
+                                            child: Stack(),
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ),
+                            Container(
+                              width: 1.20,
+                              height: 50,
+                              decoration: BoxDecoration(
+                                color: const Color(0xFFDADADA),
+                              ),
+                            ),
+                            Expanded(
+                              child: Container(
+                                height: 82,
+                                padding: const EdgeInsets.all(22),
+                                clipBehavior: Clip.antiAlias,
+                                decoration: BoxDecoration(
+                                  color: const Color(0xFFFCFCFC),
+                                ),
+                                child: Row(
+                                  mainAxisSize: MainAxisSize.min,
+                                  mainAxisAlignment: MainAxisAlignment.start,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  spacing: 10,
+                                  children: [
+                                    Text(
+                                      'https://abc.in',
+                                      style: TextStyle(
+                                        color: const Color(0xFF222222),
+                                        fontSize: 20,
+                                        fontFamily: 'Poppins',
+                                        fontWeight: FontWeight.w500,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Container(
+                        width: double.infinity,
+                        height: 1.60,
+                        decoration: BoxDecoration(
+                          color: const Color(0xFFDADADA),
+                        ),
+                      ),
+                      Container(
+                        width: double.infinity,
+                        child: Row(
+                          mainAxisSize: MainAxisSize.min,
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                            Container(
+                              width: 224,
+                              height: 82,
+                              padding: const EdgeInsets.all(22),
+                              clipBehavior: Clip.antiAlias,
+                              decoration: BoxDecoration(
+                                color: const Color(0xFFFCFCFC),
+                              ),
+                              child: Row(
+                                mainAxisSize: MainAxisSize.min,
+                                mainAxisAlignment: MainAxisAlignment.start,
+                                crossAxisAlignment: CrossAxisAlignment.center,
+                                spacing: 10,
+                                children: [
+                                  Text(
+                                    '22/05/2022',
+                                    style: TextStyle(
+                                      color: const Color(0xFF222222),
+                                      fontSize: 20,
+                                      fontFamily: 'Poppins',
+                                      fontWeight: FontWeight.w500,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            Container(
+                              width: 1.20,
+                              height: 50,
+                              decoration: BoxDecoration(
+                                color: const Color(0xFFDADADA),
+                              ),
+                            ),
+                            Container(
+                              width: 224,
+                              height: 82,
+                              padding: const EdgeInsets.symmetric(
+                                horizontal: 12,
+                                vertical: 22,
+                              ),
+                              clipBehavior: Clip.antiAlias,
+                              decoration: BoxDecoration(
+                                color: const Color(0xFFFCFCFC),
+                              ),
+                              child: Row(
+                                mainAxisSize: MainAxisSize.min,
+                                mainAxisAlignment: MainAxisAlignment.start,
+                                crossAxisAlignment: CrossAxisAlignment.center,
+                                spacing: 10,
+                                children: [
+                                  Text(
+                                    'Do Epic Shit',
+                                    style: TextStyle(
+                                      color: const Color(0xFF222222),
+                                      fontSize: 20,
+                                      fontFamily: 'Poppins',
+                                      fontWeight: FontWeight.w500,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            Container(
+                              width: 1.20,
+                              height: 50,
+                              decoration: BoxDecoration(
+                                color: const Color(0xFFDADADA),
+                              ),
+                            ),
+                            Expanded(
+                              child: Container(
+                                height: 82,
+                                padding: const EdgeInsets.symmetric(
+                                  horizontal: 12,
+                                  vertical: 22,
+                                ),
+                                clipBehavior: Clip.antiAlias,
+                                decoration: BoxDecoration(
+                                  color: const Color(0xFFFCFCFC),
+                                ),
+                                child: Row(
+                                  mainAxisSize: MainAxisSize.min,
+                                  mainAxisAlignment: MainAxisAlignment.start,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  spacing: 10,
+                                  children: [
+                                    Text(
+                                      'Ankur Warikoo',
+                                      style: TextStyle(
+                                        color: const Color(0xFF222222),
+                                        fontSize: 20,
+                                        fontFamily: 'Poppins',
+                                        fontWeight: FontWeight.w500,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ),
+                            Container(
+                              width: 1.20,
+                              height: 50,
+                              decoration: BoxDecoration(
+                                color: const Color(0xFFDADADA),
+                              ),
+                            ),
+                            Expanded(
+                              child: Container(
+                                height: 82,
+                                padding: const EdgeInsets.symmetric(
+                                  horizontal: 12,
+                                  vertical: 22,
+                                ),
+                                clipBehavior: Clip.antiAlias,
+                                decoration: BoxDecoration(
+                                  color: const Color(0xFFFCFCFC),
+                                ),
+                                child: Row(
+                                  mainAxisSize: MainAxisSize.min,
+                                  mainAxisAlignment: MainAxisAlignment.start,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  spacing: 10,
+                                  children: [
+                                    Container(
+                                      height: 30,
+                                      padding: const EdgeInsets.symmetric(
+                                        horizontal: 12,
+                                        vertical: 4,
+                                      ),
+                                      clipBehavior: Clip.antiAlias,
+                                      decoration: ShapeDecoration(
+                                        color: const Color(0xFFD3F8D2),
+                                        shape: RoundedRectangleBorder(
+                                          borderRadius: BorderRadius.circular(
+                                            6,
+                                          ),
+                                        ),
+                                      ),
+                                      child: Row(
+                                        mainAxisSize: MainAxisSize.min,
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.center,
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.center,
+                                        spacing: 10,
+                                        children: [
+                                          Text(
+                                            'Self-help',
+                                            style: TextStyle(
+                                              color: const Color(0xFF222222),
+                                              fontSize: 16,
+                                              fontFamily: 'Poppins',
+                                              fontWeight: FontWeight.w500,
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ),
+                            Container(
+                              width: 1.20,
+                              height: 50,
+                              decoration: BoxDecoration(
+                                color: const Color(0xFFDADADA),
+                              ),
+                            ),
+                            Container(
+                              width: 224,
+                              height: 82,
+                              padding: const EdgeInsets.all(22),
+                              clipBehavior: Clip.antiAlias,
+                              decoration: BoxDecoration(
+                                color: const Color(0xFFFCFCFC),
+                              ),
+                              child: Row(
+                                mainAxisSize: MainAxisSize.min,
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                crossAxisAlignment: CrossAxisAlignment.center,
+                                spacing: 10,
+                                children: [
+                                  Row(
+                                    mainAxisSize: MainAxisSize.min,
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.center,
+                                    spacing: 4,
+                                    children: [
+                                      Text(
+                                        '100',
+                                        style: TextStyle(
+                                          color: const Color(0xFF222222),
+                                          fontSize: 22,
+                                          fontFamily: 'Poppins',
+                                          fontWeight: FontWeight.w500,
+                                        ),
+                                      ),
+                                      Container(
+                                        width: 26,
+                                        height: 26,
+                                        child: Stack(
+                                          children: [
+                                            Positioned(
+                                              left: 0.02,
+                                              top: 0.02,
+                                              child: Container(
+                                                width: 25.96,
+                                                height: 25.96,
+                                                decoration: ShapeDecoration(
+                                                  color: const Color(
+                                                    0xFFD3F8D2,
+                                                  ),
+                                                  shape: OvalBorder(),
+                                                ),
+                                              ),
+                                            ),
+                                            Positioned(
+                                              left: 0.04,
+                                              top: 26,
+                                              child: Container(
+                                                transform: Matrix4.identity()
+                                                  ..translate(0.0, 0.0)
+                                                  ..rotateZ(-1.57),
+                                                width: 25.96,
+                                                height: 25.96,
+                                                decoration: ShapeDecoration(
+                                                  color: const Color(
+                                                    0xFF24DA24,
+                                                  ),
+                                                  shape: OvalBorder(),
+                                                ),
+                                              ),
+                                            ),
+                                          ],
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ],
+                              ),
+                            ),
+                            Container(
+                              width: 1.20,
+                              height: 50,
+                              decoration: BoxDecoration(
+                                color: const Color(0xFFDADADA),
+                              ),
+                            ),
+                            Expanded(
+                              child: Container(
+                                height: 82,
+                                padding: const EdgeInsets.all(22),
+                                clipBehavior: Clip.antiAlias,
+                                decoration: BoxDecoration(
+                                  color: const Color(0xFFFCFCFC),
+                                ),
+                                child: Row(
+                                  mainAxisSize: MainAxisSize.min,
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  spacing: 10,
+                                  children: [
+                                    Container(
+                                      height: 30,
+                                      padding: const EdgeInsets.symmetric(
+                                        horizontal: 12,
+                                        vertical: 6,
+                                      ),
+                                      clipBehavior: Clip.antiAlias,
+                                      decoration: ShapeDecoration(
+                                        color: const Color(0xFFFFF0BA),
+                                        shape: RoundedRectangleBorder(
+                                          borderRadius: BorderRadius.circular(
+                                            6,
+                                          ),
+                                        ),
+                                      ),
+                                      child: Row(
+                                        mainAxisSize: MainAxisSize.min,
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.center,
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.center,
+                                        spacing: 2,
+                                        children: [
+                                          Container(
+                                            width: 17.31,
+                                            height: 17.31,
+                                            clipBehavior: Clip.antiAlias,
+                                            decoration: BoxDecoration(),
+                                            child: Stack(),
+                                          ),
+                                          Container(
+                                            width: 17.31,
+                                            height: 17.31,
+                                            clipBehavior: Clip.antiAlias,
+                                            decoration: BoxDecoration(),
+                                            child: Stack(),
+                                          ),
+                                          Container(
+                                            width: 17.31,
+                                            height: 17.31,
+                                            clipBehavior: Clip.antiAlias,
+                                            decoration: BoxDecoration(),
+                                            child: Stack(),
+                                          ),
+                                          Container(
+                                            width: 17.31,
+                                            height: 17.31,
+                                            clipBehavior: Clip.antiAlias,
+                                            decoration: BoxDecoration(),
+                                            child: Stack(),
+                                          ),
+                                          Container(
+                                            width: 17.31,
+                                            height: 17.31,
+                                            clipBehavior: Clip.antiAlias,
+                                            decoration: BoxDecoration(),
+                                            child: Stack(),
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ),
+                            Container(
+                              width: 1.20,
+                              height: 50,
+                              decoration: BoxDecoration(
+                                color: const Color(0xFFDADADA),
+                              ),
+                            ),
+                            Expanded(
+                              child: Container(
+                                height: 82,
+                                padding: const EdgeInsets.all(22),
+                                clipBehavior: Clip.antiAlias,
+                                decoration: BoxDecoration(
+                                  color: const Color(0xFFFCFCFC),
+                                ),
+                                child: Row(
+                                  mainAxisSize: MainAxisSize.min,
+                                  mainAxisAlignment: MainAxisAlignment.start,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  spacing: 10,
+                                  children: [
+                                    Text(
+                                      'https://abc.in',
+                                      style: TextStyle(
+                                        color: const Color(0xFF222222),
+                                        fontSize: 20,
+                                        fontFamily: 'Poppins',
+                                        fontWeight: FontWeight.w500,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Container(
+                        width: double.infinity,
+                        height: 1.60,
+                        decoration: BoxDecoration(
+                          color: const Color(0xFFDADADA),
+                        ),
+                      ),
+                      Container(
+                        width: double.infinity,
+                        child: Row(
+                          mainAxisSize: MainAxisSize.min,
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                            Container(
+                              width: 224,
+                              height: 82,
+                              padding: const EdgeInsets.all(22),
+                              clipBehavior: Clip.antiAlias,
+                              decoration: BoxDecoration(
+                                color: const Color(0xFFFCFCFC),
+                              ),
+                              child: Row(
+                                mainAxisSize: MainAxisSize.min,
+                                mainAxisAlignment: MainAxisAlignment.start,
+                                crossAxisAlignment: CrossAxisAlignment.center,
+                                spacing: 10,
+                                children: [
+                                  Text(
+                                    '14/07/2020',
+                                    style: TextStyle(
+                                      color: const Color(0xFF222222),
+                                      fontSize: 20,
+                                      fontFamily: 'Poppins',
+                                      fontWeight: FontWeight.w500,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            Container(
+                              width: 1.20,
+                              height: 50,
+                              decoration: BoxDecoration(
+                                color: const Color(0xFFDADADA),
+                              ),
+                            ),
+                            Container(
+                              width: 224,
+                              height: 82,
+                              padding: const EdgeInsets.symmetric(
+                                horizontal: 12,
+                                vertical: 22,
+                              ),
+                              clipBehavior: Clip.antiAlias,
+                              decoration: BoxDecoration(
+                                color: const Color(0xFFFCFCFC),
+                              ),
+                              child: Row(
+                                mainAxisSize: MainAxisSize.min,
+                                mainAxisAlignment: MainAxisAlignment.start,
+                                crossAxisAlignment: CrossAxisAlignment.center,
+                                spacing: 10,
+                                children: [
+                                  Text(
+                                    '22/05/2022',
+                                    style: TextStyle(
+                                      color: const Color(0xFF222222),
+                                      fontSize: 20,
+                                      fontFamily: 'Poppins',
+                                      fontWeight: FontWeight.w500,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            Container(
+                              width: 1.20,
+                              height: 50,
+                              decoration: BoxDecoration(
+                                color: const Color(0xFFDADADA),
+                              ),
+                            ),
+                            Expanded(
+                              child: Container(
+                                height: 82,
+                                padding: const EdgeInsets.symmetric(
+                                  horizontal: 12,
+                                  vertical: 22,
+                                ),
+                                clipBehavior: Clip.antiAlias,
+                                decoration: BoxDecoration(
+                                  color: const Color(0xFFFCFCFC),
+                                ),
+                                child: Row(
+                                  mainAxisSize: MainAxisSize.min,
+                                  mainAxisAlignment: MainAxisAlignment.start,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  spacing: 10,
+                                  children: [
+                                    Text(
+                                      'Jodi Picoult',
+                                      style: TextStyle(
+                                        color: const Color(0xFF222222),
+                                        fontSize: 20,
+                                        fontFamily: 'Poppins',
+                                        fontWeight: FontWeight.w500,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ),
+                            Container(
+                              width: 1.20,
+                              height: 50,
+                              decoration: BoxDecoration(
+                                color: const Color(0xFFDADADA),
+                              ),
+                            ),
+                            Expanded(
+                              child: Container(
+                                height: 82,
+                                padding: const EdgeInsets.symmetric(
+                                  horizontal: 12,
+                                  vertical: 22,
+                                ),
+                                clipBehavior: Clip.antiAlias,
+                                decoration: BoxDecoration(
+                                  color: const Color(0xFFFCFCFC),
+                                ),
+                                child: Row(
+                                  mainAxisSize: MainAxisSize.min,
+                                  mainAxisAlignment: MainAxisAlignment.start,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  spacing: 10,
+                                  children: [
+                                    Container(
+                                      height: 30,
+                                      padding: const EdgeInsets.symmetric(
+                                        horizontal: 12,
+                                        vertical: 4,
+                                      ),
+                                      clipBehavior: Clip.antiAlias,
+                                      decoration: ShapeDecoration(
+                                        color: const Color(0xFFEDE7FB),
+                                        shape: RoundedRectangleBorder(
+                                          borderRadius: BorderRadius.circular(
+                                            6,
+                                          ),
+                                        ),
+                                      ),
+                                      child: Row(
+                                        mainAxisSize: MainAxisSize.min,
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.center,
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.center,
+                                        spacing: 10,
+                                        children: [
+                                          Text(
+                                            'Fiction',
+                                            style: TextStyle(
+                                              color: const Color(0xFF222222),
+                                              fontSize: 16,
+                                              fontFamily: 'Poppins',
+                                              fontWeight: FontWeight.w500,
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                    Container(
+                                      height: 30,
+                                      padding: const EdgeInsets.symmetric(
+                                        horizontal: 12,
+                                        vertical: 4,
+                                      ),
+                                      clipBehavior: Clip.antiAlias,
+                                      decoration: ShapeDecoration(
+                                        color: const Color(0xFFFFF0BA),
+                                        shape: RoundedRectangleBorder(
+                                          borderRadius: BorderRadius.circular(
+                                            6,
+                                          ),
+                                        ),
+                                      ),
+                                      child: Row(
+                                        mainAxisSize: MainAxisSize.min,
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.center,
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.center,
+                                        spacing: 10,
+                                        children: [
+                                          Text(
+                                            'Sappy',
+                                            style: TextStyle(
+                                              color: const Color(0xFF222222),
+                                              fontSize: 16,
+                                              fontFamily: 'Poppins',
+                                              fontWeight: FontWeight.w500,
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ),
+                            Container(
+                              width: 1.20,
+                              height: 50,
+                              decoration: BoxDecoration(
+                                color: const Color(0xFFDADADA),
+                              ),
+                            ),
+                            Container(
+                              width: 224,
+                              height: 82,
+                              padding: const EdgeInsets.all(22),
+                              clipBehavior: Clip.antiAlias,
+                              decoration: BoxDecoration(
+                                color: const Color(0xFFFCFCFC),
+                              ),
+                              child: Row(
+                                mainAxisSize: MainAxisSize.min,
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                crossAxisAlignment: CrossAxisAlignment.center,
+                                spacing: 10,
+                                children: [
+                                  Row(
+                                    mainAxisSize: MainAxisSize.min,
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.center,
+                                    spacing: 4,
+                                    children: [
+                                      Text(
+                                        '100',
+                                        style: TextStyle(
+                                          color: const Color(0xFF222222),
+                                          fontSize: 22,
+                                          fontFamily: 'Poppins',
+                                          fontWeight: FontWeight.w500,
+                                        ),
+                                      ),
+                                      Container(
+                                        width: 26,
+                                        height: 26,
+                                        child: Stack(
+                                          children: [
+                                            Positioned(
+                                              left: 0.02,
+                                              top: 0.02,
+                                              child: Container(
+                                                width: 25.96,
+                                                height: 25.96,
+                                                decoration: ShapeDecoration(
+                                                  color: const Color(
+                                                    0xFFD3F8D2,
+                                                  ),
+                                                  shape: OvalBorder(),
+                                                ),
+                                              ),
+                                            ),
+                                            Positioned(
+                                              left: 0.04,
+                                              top: 26,
+                                              child: Container(
+                                                transform: Matrix4.identity()
+                                                  ..translate(0.0, 0.0)
+                                                  ..rotateZ(-1.57),
+                                                width: 25.96,
+                                                height: 25.96,
+                                                decoration: ShapeDecoration(
+                                                  color: const Color(
+                                                    0xFF24DA24,
+                                                  ),
+                                                  shape: OvalBorder(),
+                                                ),
+                                              ),
+                                            ),
+                                          ],
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ],
+                              ),
+                            ),
+                            Container(
+                              width: 1.20,
+                              height: 50,
+                              decoration: BoxDecoration(
+                                color: const Color(0xFFDADADA),
+                              ),
+                            ),
+                            Expanded(
+                              child: Container(
+                                height: 82,
+                                padding: const EdgeInsets.all(22),
+                                clipBehavior: Clip.antiAlias,
+                                decoration: BoxDecoration(
+                                  color: const Color(0xFFFCFCFC),
+                                ),
+                                child: Row(
+                                  mainAxisSize: MainAxisSize.min,
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  spacing: 10,
+                                  children: [
+                                    Container(
+                                      height: 30,
+                                      padding: const EdgeInsets.symmetric(
+                                        horizontal: 12,
+                                        vertical: 6,
+                                      ),
+                                      clipBehavior: Clip.antiAlias,
+                                      decoration: ShapeDecoration(
+                                        color: const Color(0xFFFFF0BA),
+                                        shape: RoundedRectangleBorder(
+                                          borderRadius: BorderRadius.circular(
+                                            6,
+                                          ),
+                                        ),
+                                      ),
+                                      child: Row(
+                                        mainAxisSize: MainAxisSize.min,
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.center,
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.center,
+                                        spacing: 2,
+                                        children: [
+                                          Container(
+                                            width: 17.31,
+                                            height: 17.31,
+                                            clipBehavior: Clip.antiAlias,
+                                            decoration: BoxDecoration(),
+                                            child: Stack(),
+                                          ),
+                                          Container(
+                                            width: 17.31,
+                                            height: 17.31,
+                                            clipBehavior: Clip.antiAlias,
+                                            decoration: BoxDecoration(),
+                                            child: Stack(),
+                                          ),
+                                          Container(
+                                            width: 17.31,
+                                            height: 17.31,
+                                            clipBehavior: Clip.antiAlias,
+                                            decoration: BoxDecoration(),
+                                            child: Stack(),
+                                          ),
+                                          Container(
+                                            width: 17.31,
+                                            height: 17.31,
+                                            clipBehavior: Clip.antiAlias,
+                                            decoration: BoxDecoration(),
+                                            child: Stack(),
+                                          ),
+                                          Container(
+                                            width: 17.31,
+                                            height: 17.31,
+                                            clipBehavior: Clip.antiAlias,
+                                            decoration: BoxDecoration(),
+                                            child: Stack(),
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ),
+                            Container(
+                              width: 1.20,
+                              height: 50,
+                              decoration: BoxDecoration(
+                                color: const Color(0xFFDADADA),
+                              ),
+                            ),
+                            Expanded(
+                              child: Container(
+                                height: 82,
+                                padding: const EdgeInsets.all(22),
+                                clipBehavior: Clip.antiAlias,
+                                decoration: BoxDecoration(
+                                  color: const Color(0xFFFCFCFC),
+                                ),
+                                child: Row(
+                                  mainAxisSize: MainAxisSize.min,
+                                  mainAxisAlignment: MainAxisAlignment.start,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  spacing: 10,
+                                  children: [
+                                    Text(
+                                      'https://abc.in',
+                                      style: TextStyle(
+                                        color: const Color(0xFF222222),
+                                        fontSize: 20,
+                                        fontFamily: 'Poppins',
+                                        fontWeight: FontWeight.w500,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Container(
+                        width: double.infinity,
+                        height: 1.60,
+                        decoration: BoxDecoration(
+                          color: const Color(0xFFDADADA),
+                        ),
+                      ),
+                      Container(
+                        width: double.infinity,
+                        child: Row(
+                          mainAxisSize: MainAxisSize.min,
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                            Container(
+                              width: 224,
+                              height: 82,
+                              padding: const EdgeInsets.all(22),
+                              clipBehavior: Clip.antiAlias,
+                              decoration: BoxDecoration(
+                                color: const Color(0xFFFCFCFC),
+                              ),
+                              child: Row(
+                                mainAxisSize: MainAxisSize.min,
+                                mainAxisAlignment: MainAxisAlignment.start,
+                                crossAxisAlignment: CrossAxisAlignment.center,
+                                spacing: 10,
+                                children: [
+                                  Text(
+                                    '12/04/2021',
+                                    style: TextStyle(
+                                      color: const Color(0xFF222222),
+                                      fontSize: 20,
+                                      fontFamily: 'Poppins',
+                                      fontWeight: FontWeight.w500,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            Container(
+                              width: 1.20,
+                              height: 50,
+                              decoration: BoxDecoration(
+                                color: const Color(0xFFDADADA),
+                              ),
+                            ),
+                            Container(
+                              width: 224,
+                              height: 82,
+                              padding: const EdgeInsets.symmetric(
+                                horizontal: 12,
+                                vertical: 22,
+                              ),
+                              clipBehavior: Clip.antiAlias,
+                              decoration: BoxDecoration(
+                                color: const Color(0xFFFCFCFC),
+                              ),
+                              child: Row(
+                                mainAxisSize: MainAxisSize.min,
+                                mainAxisAlignment: MainAxisAlignment.start,
+                                crossAxisAlignment: CrossAxisAlignment.center,
+                                spacing: 10,
+                                children: [
+                                  Text(
+                                    'Atomic Habits ',
+                                    style: TextStyle(
+                                      color: const Color(0xFF222222),
+                                      fontSize: 20,
+                                      fontFamily: 'Poppins',
+                                      fontWeight: FontWeight.w500,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            Container(
+                              width: 1.20,
+                              height: 50,
+                              decoration: BoxDecoration(
+                                color: const Color(0xFFDADADA),
+                              ),
+                            ),
+                            Expanded(
+                              child: Container(
+                                height: 82,
+                                padding: const EdgeInsets.symmetric(
+                                  horizontal: 12,
+                                  vertical: 22,
+                                ),
+                                clipBehavior: Clip.antiAlias,
+                                decoration: BoxDecoration(
+                                  color: const Color(0xFFFCFCFC),
+                                ),
+                                child: Row(
+                                  mainAxisSize: MainAxisSize.min,
+                                  mainAxisAlignment: MainAxisAlignment.start,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  spacing: 10,
+                                  children: [
+                                    Text(
+                                      'James Clear',
+                                      style: TextStyle(
+                                        color: const Color(0xFF222222),
+                                        fontSize: 20,
+                                        fontFamily: 'Poppins',
+                                        fontWeight: FontWeight.w500,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ),
+                            Container(
+                              width: 1.20,
+                              height: 50,
+                              decoration: BoxDecoration(
+                                color: const Color(0xFFDADADA),
+                              ),
+                            ),
+                            Expanded(
+                              child: Container(
+                                height: 82,
+                                padding: const EdgeInsets.symmetric(
+                                  horizontal: 12,
+                                  vertical: 22,
+                                ),
+                                clipBehavior: Clip.antiAlias,
+                                decoration: BoxDecoration(
+                                  color: const Color(0xFFFCFCFC),
+                                ),
+                                child: Row(
+                                  mainAxisSize: MainAxisSize.min,
+                                  mainAxisAlignment: MainAxisAlignment.start,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  spacing: 10,
+                                  children: [
+                                    Container(
+                                      height: 30,
+                                      padding: const EdgeInsets.symmetric(
+                                        horizontal: 12,
+                                        vertical: 4,
+                                      ),
+                                      clipBehavior: Clip.antiAlias,
+                                      decoration: ShapeDecoration(
+                                        color: const Color(0xFFD3F8D2),
+                                        shape: RoundedRectangleBorder(
+                                          borderRadius: BorderRadius.circular(
+                                            6,
+                                          ),
+                                        ),
+                                      ),
+                                      child: Row(
+                                        mainAxisSize: MainAxisSize.min,
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.center,
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.center,
+                                        spacing: 10,
+                                        children: [
+                                          Text(
+                                            'Self-help',
+                                            style: TextStyle(
+                                              color: const Color(0xFF222222),
+                                              fontSize: 16,
+                                              fontFamily: 'Poppins',
+                                              fontWeight: FontWeight.w500,
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ),
+                            Container(
+                              width: 1.20,
+                              height: 50,
+                              decoration: BoxDecoration(
+                                color: const Color(0xFFDADADA),
+                              ),
+                            ),
+                            Container(
+                              width: 224,
+                              height: 82,
+                              padding: const EdgeInsets.all(22),
+                              clipBehavior: Clip.antiAlias,
+                              decoration: BoxDecoration(
+                                color: const Color(0xFFFCFCFC),
+                              ),
+                              child: Row(
+                                mainAxisSize: MainAxisSize.min,
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                crossAxisAlignment: CrossAxisAlignment.center,
+                                spacing: 10,
+                                children: [
+                                  Row(
+                                    mainAxisSize: MainAxisSize.min,
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.center,
+                                    spacing: 4,
+                                    children: [
+                                      Text(
+                                        '100',
+                                        style: TextStyle(
+                                          color: const Color(0xFF222222),
+                                          fontSize: 22,
+                                          fontFamily: 'Poppins',
+                                          fontWeight: FontWeight.w500,
+                                        ),
+                                      ),
+                                      Container(
+                                        width: 26,
+                                        height: 26,
+                                        child: Stack(
+                                          children: [
+                                            Positioned(
+                                              left: 0.02,
+                                              top: 0.02,
+                                              child: Container(
+                                                width: 25.96,
+                                                height: 25.96,
+                                                decoration: ShapeDecoration(
+                                                  color: const Color(
+                                                    0xFFD3F8D2,
+                                                  ),
+                                                  shape: OvalBorder(),
+                                                ),
+                                              ),
+                                            ),
+                                            Positioned(
+                                              left: 0.04,
+                                              top: 26,
+                                              child: Container(
+                                                transform: Matrix4.identity()
+                                                  ..translate(0.0, 0.0)
+                                                  ..rotateZ(-1.57),
+                                                width: 25.96,
+                                                height: 25.96,
+                                                decoration: ShapeDecoration(
+                                                  color: const Color(
+                                                    0xFF24DA24,
+                                                  ),
+                                                  shape: OvalBorder(),
+                                                ),
+                                              ),
+                                            ),
+                                          ],
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ],
+                              ),
+                            ),
+                            Container(
+                              width: 1.20,
+                              height: 50,
+                              decoration: BoxDecoration(
+                                color: const Color(0xFFDADADA),
+                              ),
+                            ),
+                            Expanded(
+                              child: Container(
+                                height: 82,
+                                padding: const EdgeInsets.all(22),
+                                clipBehavior: Clip.antiAlias,
+                                decoration: BoxDecoration(
+                                  color: const Color(0xFFFCFCFC),
+                                ),
+                                child: Row(
+                                  mainAxisSize: MainAxisSize.min,
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  spacing: 10,
+                                  children: [
+                                    Container(
+                                      height: 30,
+                                      padding: const EdgeInsets.symmetric(
+                                        horizontal: 12,
+                                        vertical: 6,
+                                      ),
+                                      clipBehavior: Clip.antiAlias,
+                                      decoration: ShapeDecoration(
+                                        color: const Color(0xFFFFF0BA),
+                                        shape: RoundedRectangleBorder(
+                                          borderRadius: BorderRadius.circular(
+                                            6,
+                                          ),
+                                        ),
+                                      ),
+                                      child: Row(
+                                        mainAxisSize: MainAxisSize.min,
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.center,
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.center,
+                                        spacing: 2,
+                                        children: [
+                                          Container(
+                                            width: 17.31,
+                                            height: 17.31,
+                                            clipBehavior: Clip.antiAlias,
+                                            decoration: BoxDecoration(),
+                                            child: Stack(),
+                                          ),
+                                          Container(
+                                            width: 17.31,
+                                            height: 17.31,
+                                            clipBehavior: Clip.antiAlias,
+                                            decoration: BoxDecoration(),
+                                            child: Stack(),
+                                          ),
+                                          Container(
+                                            width: 17.31,
+                                            height: 17.31,
+                                            clipBehavior: Clip.antiAlias,
+                                            decoration: BoxDecoration(),
+                                            child: Stack(),
+                                          ),
+                                          Container(
+                                            width: 17.31,
+                                            height: 17.31,
+                                            clipBehavior: Clip.antiAlias,
+                                            decoration: BoxDecoration(),
+                                            child: Stack(),
+                                          ),
+                                          Container(
+                                            width: 17.31,
+                                            height: 17.31,
+                                            clipBehavior: Clip.antiAlias,
+                                            decoration: BoxDecoration(),
+                                            child: Stack(),
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ),
+                            Container(
+                              width: 1.20,
+                              height: 50,
+                              decoration: BoxDecoration(
+                                color: const Color(0xFFDADADA),
+                              ),
+                            ),
+                            Expanded(
+                              child: Container(
+                                height: 82,
+                                padding: const EdgeInsets.all(22),
+                                clipBehavior: Clip.antiAlias,
+                                decoration: BoxDecoration(
+                                  color: const Color(0xFFFCFCFC),
+                                ),
+                                child: Row(
+                                  mainAxisSize: MainAxisSize.min,
+                                  mainAxisAlignment: MainAxisAlignment.start,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  spacing: 10,
+                                  children: [
+                                    Text(
+                                      'https://abc.in',
+                                      style: TextStyle(
+                                        color: const Color(0xFF222222),
+                                        fontSize: 20,
+                                        fontFamily: 'Poppins',
+                                        fontWeight: FontWeight.w500,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Container(
+                        width: double.infinity,
+                        height: 1.60,
+                        decoration: BoxDecoration(
+                          color: const Color(0xFFDADADA),
+                        ),
+                      ),
+                      Container(
+                        width: double.infinity,
+                        child: Row(
+                          mainAxisSize: MainAxisSize.min,
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                            Container(
+                              width: 224,
+                              height: 82,
+                              padding: const EdgeInsets.all(22),
+                              clipBehavior: Clip.antiAlias,
+                              decoration: BoxDecoration(
+                                color: const Color(0xFFFCFCFC),
+                              ),
+                              child: Row(
+                                mainAxisSize: MainAxisSize.min,
+                                mainAxisAlignment: MainAxisAlignment.start,
+                                crossAxisAlignment: CrossAxisAlignment.center,
+                                spacing: 10,
+                                children: [
+                                  Text(
+                                    '02/02/2022',
+                                    style: TextStyle(
+                                      color: const Color(0xFF222222),
+                                      fontSize: 20,
+                                      fontFamily: 'Poppins',
+                                      fontWeight: FontWeight.w500,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            Container(
+                              width: 1.20,
+                              height: 50,
+                              decoration: BoxDecoration(
+                                color: const Color(0xFFDADADA),
+                              ),
+                            ),
+                            Container(
+                              width: 224,
+                              height: 82,
+                              padding: const EdgeInsets.symmetric(
+                                horizontal: 12,
+                                vertical: 22,
+                              ),
+                              clipBehavior: Clip.antiAlias,
+                              decoration: BoxDecoration(
+                                color: const Color(0xFFFCFCFC),
+                              ),
+                              child: Row(
+                                mainAxisSize: MainAxisSize.min,
+                                mainAxisAlignment: MainAxisAlignment.start,
+                                crossAxisAlignment: CrossAxisAlignment.center,
+                                spacing: 10,
+                                children: [
+                                  Text(
+                                    'Dune',
+                                    style: TextStyle(
+                                      color: const Color(0xFF222222),
+                                      fontSize: 20,
+                                      fontFamily: 'Poppins',
+                                      fontWeight: FontWeight.w500,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            Container(
+                              width: 1.20,
+                              height: 50,
+                              decoration: BoxDecoration(
+                                color: const Color(0xFFDADADA),
+                              ),
+                            ),
+                            Expanded(
+                              child: Container(
+                                height: 82,
+                                padding: const EdgeInsets.symmetric(
+                                  horizontal: 12,
+                                  vertical: 22,
+                                ),
+                                clipBehavior: Clip.antiAlias,
+                                decoration: BoxDecoration(
+                                  color: const Color(0xFFFCFCFC),
+                                ),
+                                child: Row(
+                                  mainAxisSize: MainAxisSize.min,
+                                  mainAxisAlignment: MainAxisAlignment.start,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  spacing: 10,
+                                  children: [
+                                    Text(
+                                      'Frank Herbert',
+                                      style: TextStyle(
+                                        color: const Color(0xFF222222),
+                                        fontSize: 20,
+                                        fontFamily: 'Poppins',
+                                        fontWeight: FontWeight.w500,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ),
+                            Container(
+                              width: 1.20,
+                              height: 50,
+                              decoration: BoxDecoration(
+                                color: const Color(0xFFDADADA),
+                              ),
+                            ),
+                            Expanded(
+                              child: Container(
+                                height: 82,
+                                padding: const EdgeInsets.symmetric(
+                                  horizontal: 12,
+                                  vertical: 22,
+                                ),
+                                clipBehavior: Clip.antiAlias,
+                                decoration: BoxDecoration(
+                                  color: const Color(0xFFFCFCFC),
+                                ),
+                                child: Row(
+                                  mainAxisSize: MainAxisSize.min,
+                                  mainAxisAlignment: MainAxisAlignment.start,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  spacing: 10,
+                                  children: [
+                                    Container(
+                                      height: 30,
+                                      padding: const EdgeInsets.symmetric(
+                                        horizontal: 12,
+                                        vertical: 4,
+                                      ),
+                                      clipBehavior: Clip.antiAlias,
+                                      decoration: ShapeDecoration(
+                                        color: const Color(0xFFFBE7E9),
+                                        shape: RoundedRectangleBorder(
+                                          borderRadius: BorderRadius.circular(
+                                            6,
+                                          ),
+                                        ),
+                                      ),
+                                      child: Row(
+                                        mainAxisSize: MainAxisSize.min,
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.center,
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.center,
+                                        spacing: 10,
+                                        children: [
+                                          Text(
+                                            'Sci-Fi',
+                                            style: TextStyle(
+                                              color: const Color(0xFF222222),
+                                              fontSize: 16,
+                                              fontFamily: 'Poppins',
+                                              fontWeight: FontWeight.w500,
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ),
+                            Container(
+                              width: 1.20,
+                              height: 50,
+                              decoration: BoxDecoration(
+                                color: const Color(0xFFDADADA),
+                              ),
+                            ),
+                            Container(
+                              width: 224,
+                              height: 82,
+                              padding: const EdgeInsets.all(22),
+                              clipBehavior: Clip.antiAlias,
+                              decoration: BoxDecoration(
+                                color: const Color(0xFFFCFCFC),
+                              ),
+                              child: Row(
+                                mainAxisSize: MainAxisSize.min,
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                crossAxisAlignment: CrossAxisAlignment.center,
+                                spacing: 10,
+                                children: [
+                                  Row(
+                                    mainAxisSize: MainAxisSize.min,
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.center,
+                                    spacing: 4,
+                                    children: [
+                                      Text(
+                                        '75',
+                                        style: TextStyle(
+                                          color: const Color(0xFF222222),
+                                          fontSize: 22,
+                                          fontFamily: 'Poppins',
+                                          fontWeight: FontWeight.w500,
+                                        ),
+                                      ),
+                                      Container(
+                                        width: 26,
+                                        height: 26,
+                                        child: Stack(
+                                          children: [
+                                            Positioned(
+                                              left: 0.02,
+                                              top: 0.02,
+                                              child: Container(
+                                                width: 25.96,
+                                                height: 25.96,
+                                                decoration: ShapeDecoration(
+                                                  color: const Color(
+                                                    0xFFD3F8D2,
+                                                  ),
+                                                  shape: OvalBorder(),
+                                                ),
+                                              ),
+                                            ),
+                                            Positioned(
+                                              left: 0.04,
+                                              top: 26,
+                                              child: Container(
+                                                transform: Matrix4.identity()
+                                                  ..translate(0.0, 0.0)
+                                                  ..rotateZ(-1.57),
+                                                width: 25.96,
+                                                height: 25.96,
+                                                decoration: ShapeDecoration(
+                                                  color: const Color(
+                                                    0xFF24DA24,
+                                                  ),
+                                                  shape: OvalBorder(),
+                                                ),
+                                              ),
+                                            ),
+                                          ],
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ],
+                              ),
+                            ),
+                            Container(
+                              width: 1.20,
+                              height: 50,
+                              decoration: BoxDecoration(
+                                color: const Color(0xFFDADADA),
+                              ),
+                            ),
+                            Expanded(
+                              child: Container(
+                                height: 82,
+                                padding: const EdgeInsets.all(22),
+                                clipBehavior: Clip.antiAlias,
+                                decoration: BoxDecoration(
+                                  color: const Color(0xFFFCFCFC),
+                                ),
+                                child: Row(
+                                  mainAxisSize: MainAxisSize.min,
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  spacing: 10,
+                                  children: [
+                                    Container(
+                                      height: 30,
+                                      padding: const EdgeInsets.symmetric(
+                                        horizontal: 12,
+                                        vertical: 6,
+                                      ),
+                                      clipBehavior: Clip.antiAlias,
+                                      decoration: ShapeDecoration(
+                                        color: const Color(0xFFFFF0BA),
+                                        shape: RoundedRectangleBorder(
+                                          borderRadius: BorderRadius.circular(
+                                            6,
+                                          ),
+                                        ),
+                                      ),
+                                      child: Row(
+                                        mainAxisSize: MainAxisSize.min,
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.center,
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.center,
+                                        spacing: 2,
+                                        children: [
+                                          Container(
+                                            width: 17.31,
+                                            height: 17.31,
+                                            clipBehavior: Clip.antiAlias,
+                                            decoration: BoxDecoration(),
+                                            child: Stack(),
+                                          ),
+                                          Container(
+                                            width: 17.31,
+                                            height: 17.31,
+                                            clipBehavior: Clip.antiAlias,
+                                            decoration: BoxDecoration(),
+                                            child: Stack(),
+                                          ),
+                                          Container(
+                                            width: 17.31,
+                                            height: 17.31,
+                                            clipBehavior: Clip.antiAlias,
+                                            decoration: BoxDecoration(),
+                                            child: Stack(),
+                                          ),
+                                          Container(
+                                            width: 17.31,
+                                            height: 17.31,
+                                            clipBehavior: Clip.antiAlias,
+                                            decoration: BoxDecoration(),
+                                            child: Stack(),
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ),
+                            Container(
+                              width: 1.20,
+                              height: 50,
+                              decoration: BoxDecoration(
+                                color: const Color(0xFFDADADA),
+                              ),
+                            ),
+                            Expanded(
+                              child: Container(
+                                height: 82,
+                                padding: const EdgeInsets.all(22),
+                                clipBehavior: Clip.antiAlias,
+                                decoration: BoxDecoration(
+                                  color: const Color(0xFFFCFCFC),
+                                ),
+                                child: Row(
+                                  mainAxisSize: MainAxisSize.min,
+                                  mainAxisAlignment: MainAxisAlignment.start,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  spacing: 10,
+                                  children: [
+                                    Text(
+                                      'https://abc.in',
+                                      style: TextStyle(
+                                        color: const Color(0xFF222222),
+                                        fontSize: 20,
+                                        fontFamily: 'Poppins',
+                                        fontWeight: FontWeight.w500,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ],
+      ),
     );
   }
 }

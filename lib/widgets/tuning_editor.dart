@@ -19,34 +19,35 @@ class TuningEditor extends ConsumerWidget {
           padding: const EdgeInsets.fromLTRB(16, 8, 16, 4),
           child: Text(
             'Instrument Preset',
-            style: Theme.of(context)
-                .textTheme
-                .labelSmall
-                ?.copyWith(color: Colors.grey.shade600),
+            style: Theme.of(
+              context,
+            ).textTheme.labelSmall?.copyWith(color: Colors.grey.shade600),
           ),
         ),
         SingleChildScrollView(
           scrollDirection: Axis.horizontal,
           padding: const EdgeInsets.symmetric(horizontal: 16),
           child: Row(
-            children: [
-              StringedInstrument.guitar,
-              StringedInstrument.bass,
-              StringedInstrument.ukulele,
-              StringedInstrument.sevenStringGuitar,
-            ].map((preset) {
-              final selected = instrument.name == preset.name;
-              return Padding(
-                padding: const EdgeInsets.only(right: 6),
-                child: ChoiceChip(
-                  label: Text(preset.name),
-                  selected: selected,
-                  onSelected: (_) => ref
-                      .read(instrumentProvider.notifier)
-                      .setInstrument(preset),
-                ),
-              );
-            }).toList(),
+            children:
+                [
+                  StringedInstrument.guitar,
+                  StringedInstrument.bass,
+                  StringedInstrument.ukulele,
+                  StringedInstrument.charango,
+                  StringedInstrument.sevenStringGuitar,
+                ].map((preset) {
+                  final selected = instrument.name == preset.name;
+                  return Padding(
+                    padding: const EdgeInsets.only(right: 6),
+                    child: ChoiceChip(
+                      label: Text(preset.name),
+                      selected: selected,
+                      onSelected: (_) => ref
+                          .read(instrumentProvider.notifier)
+                          .setInstrument(preset),
+                    ),
+                  );
+                }).toList(),
           ),
         ),
 
@@ -55,22 +56,23 @@ class TuningEditor extends ConsumerWidget {
           padding: const EdgeInsets.fromLTRB(16, 12, 16, 4),
           child: Text(
             'Tuning  (low → high)',
-            style: Theme.of(context)
-                .textTheme
-                .labelSmall
-                ?.copyWith(color: Colors.grey.shade600),
+            style: Theme.of(
+              context,
+            ).textTheme.labelSmall?.copyWith(color: Colors.grey.shade600),
           ),
         ),
         ListView.builder(
           shrinkWrap: true,
           physics: const NeverScrollableScrollPhysics(),
           itemCount: instrument.courseCount,
-          itemBuilder: (context, courseIndex) {
+          itemBuilder: (context, listIndex) {
+            final courseIndex = instrument.courseCount - 1 - listIndex;
+            final displayNumber = listIndex + 1; // 表示用：1コース目が最高音弦
             final noteName = instrument.openNoteNameAt(courseIndex);
             return ListTile(
               dense: true,
               leading: Text(
-                'Course ${courseIndex + 1}',
+                'Course $displayNumber',
                 style: const TextStyle(fontSize: 13),
               ),
               title: SingleChildScrollView(

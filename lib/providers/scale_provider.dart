@@ -28,15 +28,15 @@ class InstrumentNotifier extends Notifier<StringedInstrument> {
 
   void removeCourse(int courseIndex) {
     if (state.courseCount <= 1) return;
-    final newTuning = List<NoteName>.from(state.tuning)
-      ..removeAt(courseIndex);
+    final newTuning = List<NoteName>.from(state.tuning)..removeAt(courseIndex);
     state = state.copyWith(tuning: newTuning);
   }
 }
 
 final instrumentProvider =
     NotifierProvider<InstrumentNotifier, StringedInstrument>(
-        InstrumentNotifier.new);
+      InstrumentNotifier.new,
+    );
 
 // ─────────────────────────────────────────
 // スケール
@@ -58,8 +58,7 @@ class ScaleNotifier extends Notifier<Scale> {
   }
 }
 
-final scaleProvider =
-    NotifierProvider<ScaleNotifier, Scale>(ScaleNotifier.new);
+final scaleProvider = NotifierProvider<ScaleNotifier, Scale>(ScaleNotifier.new);
 
 // ─────────────────────────────────────────
 // カスタムスケール用：選択中の音程セット
@@ -86,4 +85,5 @@ class CustomIntervalsNotifier extends Notifier<Set<NoteIndex>> {
 
 final customIntervalsProvider =
     NotifierProvider<CustomIntervalsNotifier, Set<NoteIndex>>(
-        CustomIntervalsNotifier.new);
+      CustomIntervalsNotifier.new,
+    );

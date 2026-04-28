@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import '../providers/scale_provider.dart';
-import '../widgets/fretboard_widget.dart';
-import '../widgets/scale_selector.dart';
-import '../widgets/tuning_editor.dart';
+import '../../providers/scale_provider.dart';
+import '../../widgets/fretboard_widget.dart';
+import '../../widgets/scale_selector.dart';
+import '../../widgets/tuning_editor.dart';
 
 class HomeScreen extends ConsumerWidget {
   const HomeScreen({super.key});

@@ -11,10 +11,7 @@ class FretboardPainter extends CustomPainter {
   final Scale scale;
   final StringedInstrument instrument;
 
-  FretboardPainter({
-    required this.scale,
-    required this.instrument,
-  });
+  FretboardPainter({required this.scale, required this.instrument});
 
   // ─── 座標ヘルパー ───────────────────────
 
@@ -52,8 +49,11 @@ class FretboardPainter extends CustomPainter {
     // 弦（横線）
     for (int c = 0; c < instrument.courseCount; c++) {
       final y = _courseToY(c, size);
-      canvas.drawLine(Offset(_fretToX(0, size), y),
-          Offset(size.width, y), linePaint);
+      canvas.drawLine(
+        Offset(_fretToX(0, size), y),
+        Offset(size.width, y),
+        linePaint,
+      );
     }
 
     // フレット（縦線）
@@ -86,8 +86,7 @@ class FretboardPainter extends CustomPainter {
         if (!scale.noteIndices.contains(noteIdx)) continue;
 
         final isRoot = noteIdx == scale.rootIndex;
-        final dotPaint = Paint()
-          ..color = isRoot ? Colors.red : Colors.black87;
+        final dotPaint = Paint()..color = isRoot ? Colors.red : Colors.black87;
 
         // 開放弦（fret=0）は弦の左端に表示
         final x = fret == 0
@@ -102,7 +101,11 @@ class FretboardPainter extends CustomPainter {
   }
 
   void _drawNoteLabel(
-      Canvas canvas, Offset center, NoteIndex noteIdx, bool isRoot) {
+    Canvas canvas,
+    Offset center,
+    NoteIndex noteIdx,
+    bool isRoot,
+  ) {
     final label = noteNames[noteIdx];
     final tp = TextPainter(
       text: TextSpan(
@@ -115,22 +118,19 @@ class FretboardPainter extends CustomPainter {
       ),
       textDirection: TextDirection.ltr,
     )..layout();
-    tp.paint(
-      canvas,
-      center - Offset(tp.width / 2, tp.height / 2),
-    );
+    tp.paint(canvas, center - Offset(tp.width / 2, tp.height / 2));
   }
 
   void _drawOpenStringLabels(Canvas canvas, Size size) {
     for (int c = 0; c < instrument.courseCount; c++) {
+      // 開放弦にドットがある場合はラベルは省略
+      if (scale.noteIndices.contains(instrument.noteAt(c, 0))) continue;
+
       final y = _courseToY(c, size);
       final tp = TextPainter(
         text: TextSpan(
           text: instrument.openNoteNameAt(c),
-          style: TextStyle(
-            color: Colors.grey.shade600,
-            fontSize: 10,
-          ),
+          style: TextStyle(color: Colors.grey.shade600, fontSize: 10),
         ),
         textDirection: TextDirection.ltr,
       )..layout();
@@ -149,7 +149,6 @@ class FretboardPainter extends CustomPainter {
 
   @override
   bool shouldRepaint(FretboardPainter oldDelegate) {
-    return oldDelegate.scale != scale ||
-        oldDelegate.instrument != instrument;
+    return oldDelegate.scale != scale || oldDelegate.instrument != instrument;
   }
 }

@@ -4,10 +4,7 @@ class StringedInstrument {
   final String name;
   final List<NoteName> tuning; // インデックス0が最低音コース
 
-  const StringedInstrument({
-    required this.name,
-    required this.tuning,
-  });
+  const StringedInstrument({required this.name, required this.tuning});
 
   int get courseCount => tuning.length;
 
@@ -20,10 +17,7 @@ class StringedInstrument {
   /// コースのopen stringの音名
   NoteName openNoteNameAt(int courseIndex) => tuning[courseIndex];
 
-  StringedInstrument copyWith({
-    String? name,
-    List<NoteName>? tuning,
-  }) {
+  StringedInstrument copyWith({String? name, List<NoteName>? tuning}) {
     return StringedInstrument(
       name: name ?? this.name,
       tuning: tuning ?? this.tuning,
@@ -44,6 +38,11 @@ class StringedInstrument {
   static const ukulele = StringedInstrument(
     name: 'Ukulele',
     tuning: ['G', 'C', 'E', 'A'],
+  );
+
+  static const charango = StringedInstrument(
+    name: 'Charango',
+    tuning: ['G', 'C', 'E', 'A', 'E'],
   );
 
   static const sevenStringGuitar = StringedInstrument(

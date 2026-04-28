@@ -36,14 +36,14 @@ class FretboardWidget extends StatelessWidget {
         // 横スクロール対応のフレットボード
         SingleChildScrollView(
           scrollDirection: Axis.horizontal,
-          padding: const EdgeInsets.symmetric(horizontal: 8),
+          padding: const EdgeInsets.symmetric(horizontal: 10),
           child: SizedBox(
             width: 900, // フレット幅の合計（等間隔12フレット分）
             height: _canvasHeight,
-            child: CustomPaint(
-              painter: FretboardPainter(
-                scale: scale,
-                instrument: instrument,
+            child: Padding(
+              padding: const EdgeInsets.only(left: 10), // ← 追加：開放弦ドット用スペース
+              child: CustomPaint(
+                painter: FretboardPainter(scale: scale, instrument: instrument),
               ),
             ),
           ),
@@ -73,10 +73,7 @@ class _FretNumberRow extends StatelessWidget {
                 child: Center(
                   child: Text(
                     '$fret',
-                    style: TextStyle(
-                      fontSize: 10,
-                      color: Colors.grey.shade500,
-                    ),
+                    style: TextStyle(fontSize: 10, color: Colors.grey.shade500),
                   ),
                 ),
               );

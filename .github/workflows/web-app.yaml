@@ -1,0 +1,17 @@
+workflows:
+  web-app-release:
+    name: Web App Release
+    environment:
+      flutter: stable
+
+    scripts:
+      - flutter pub get
+      - flutter build web --release
+
+    artifacts:
+      - build/web/**
+
+    publishing:
+      github_pages:
+        branch: main
+        folder: build/web

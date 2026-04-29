@@ -1,4 +1,11 @@
-workflows:
+name: Web App CI/CD
+on: 
+  push:
+    branches:
+      - main
+
+jobs:
+  runs-on: flutter-latest
   web-app-release:
     name: Web App Release
     environment:

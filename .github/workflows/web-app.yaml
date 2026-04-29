@@ -6,7 +6,7 @@ on:
 
 jobs:
   web-app-release:
-    runs-on: flutter-stable
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
 

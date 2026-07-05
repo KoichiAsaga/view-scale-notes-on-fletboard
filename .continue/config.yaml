@@ -21,4 +21,12 @@ context:
   - provider: code
   - provider: diff
   # - provider: terminal
-  
+# mcpServers:
+#   - name: GitHub MCP Demo
+#     command: npx
+#     args:
+#       - "-y"
+#       - "@modelcontextprotocol/server-github"
+#     env:
+#       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+#     connectionTimeout: 30

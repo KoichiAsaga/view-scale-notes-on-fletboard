@@ -14,30 +14,36 @@ class HomeScreen extends ConsumerWidget {
     final instrument = ref.watch(instrumentProvider);
 
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Fretboard Scale Viewer'),
-        centerTitle: true,
-      ),
-      body: SingleChildScrollView(
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            // ── フレットボード ────────────
-            FretboardWidget(scale: scale, instrument: instrument),
+      body: CustomScrollView(
+        slivers: [
+          const SliverAppBar(
+            title: Text('Fretboard Scale Viewer'),
+            centerTitle: true,
+            floating: false,
+            pinned: false,
+          ),
+          SliverToBoxAdapter(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                // ── フレットボード ────────────
+                FretboardWidget(scale: scale, instrument: instrument),
 
-            const Divider(height: 24),
+                const Divider(height: 24),
 
-            // ── スケール選択 ──────────────
-            ScaleSelector(),
+                // ── スケール選択 ──────────────
+                ScaleSelector(),
 
-            const Divider(height: 24),
+                const Divider(height: 24),
 
-            // ── チューニング編集 ──────────
-            TuningEditor(),
+                // ── チューニング編集 ──────────
+                TuningEditor(),
 
-            const SizedBox(height: 32),
-          ],
-        ),
+                const SizedBox(height: 32),
+              ],
+            ),
+          ),
+        ],
       ),
     );
   }
